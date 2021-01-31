@@ -14,6 +14,10 @@ pipeline {
                 branches: [[ "origin/master"]],
                 userRemoteConfigs: [[
                     url: "https://github.com/dineshpyprogram/pipeline-trigger-pollscm.git"]]])
+
+                echo "printenv"
+                sh printenv
+                sh cat normal.txt
             }
         }
     }
