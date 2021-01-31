@@ -17,7 +17,7 @@ pipeline {
 
                 echo "printenv"
                 sh printenv
-                sh cat normal.txt
+                
             }
         }
     }
