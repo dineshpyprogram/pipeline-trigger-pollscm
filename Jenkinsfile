@@ -11,7 +11,7 @@ pipeline {
         stage("build") {
             steps {
                 checkout([$class: "GitSCM",
-                branches: [[ "origin/master"]],
+                branches: [[name: "origin/master"]],
                 userRemoteConfigs: [[
                     url: "https://github.com/dineshpyprogram/pipeline-trigger-pollscm.git"]]])
 
